@@ -10,7 +10,6 @@ class StateHandler::Base
   end
 
   def extract_valid_ebt_number_from_text(text)
-    puts text
     whitespace_free_text = text.gsub(" ", "")
     dash_and_whitespace_free_text = whitespace_free_text.gsub("-", "")
     number_matches = dash_and_whitespace_free_text.match(/\d+/)
