@@ -24,7 +24,7 @@ class MessageGenerator
       if optional_balances[:cash]
         balance_message = "Hi! Your food stamp balance is #{food_stamp_balance} and your cash balance is #{optional_balances[:cash]}."
       else
-        balance_message = "Hi! Your up to date EBT balance calendar is available here https://ebt.ai/#{food_stamp_balance}."
+        balance_message = "Hi! Your up to date balance calendar is available here https://ebt.ai/#{food_stamp_balance}."
       end
     end
     balance_message
