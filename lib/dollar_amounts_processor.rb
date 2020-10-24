@@ -30,7 +30,7 @@ class DollarAmountsProcessor
       m = Regexp.last_match
       dollars = in_numbers(m[1])
       dollars += 0.01 * in_numbers(m[2]) if m[2]
-      '%.2f' % [ dollars ]
+      '$%.2f' % [ dollars ]
     end
   end
 
